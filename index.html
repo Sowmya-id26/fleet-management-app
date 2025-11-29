@@ -12,14 +12,40 @@
             <label>Email</label>
             <input type="email"
             id="login"
-            placeholder="abc@gmil.com">
+            placeholder="admin@gmil.com">
         </div>
-        <button onclick="login()"
+    </div>
+     <div class="Password">
+        <h2>Password</h2>
+        <div class="input">
+            <label>password</label>
+            <input type="password"
+            id="password"
+            placeholder="admin@123">
+        </div>
+    </div>
+    <button onclick="login()"
         class="button">Login</button>
           </button>
-
-
-
+     
     </div>
+    <script>
+        function login(){
+            let email=document.getElementById("email").value.trim();
+            let Password=document.getElementById("password").value.trim();
+            const ValidEmail="admin@gmail.com";
+            const password ="admin1234";
+            if(email==ValidEmail && Password==password){
+                alert("Login Sucessfull!")
+            }
+            else{
+                alert("wromg email or password")
+            }
+
+
+
+        }
+        
+    </script>
 </body>
 </html>
