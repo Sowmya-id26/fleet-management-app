@@ -3,11 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Dashboard</title>
 </head>
 <body>
-    <div class="Bar">
-        
+    <header class="navbar">
+        <h2>Fleet Dashboard</h2>
+        <div class="filer-box">
+            <select id="category">
+                <option value="All">All category</option>
+                <option value="Auto"></option>
+                <option value="car"></option>
+                <option value="Truck"></option>
+                <option value="Bus"></option>
+
+            </select>
+            <select id="filterAvailability">
+                <option value="All"></option>
+                <option value="Avilable"></option>
+                <option value="Unavilable"></option>
+
+            </select>
+            <button class="tn" onclick="clearFilter()">clearFilter</button>
+            </button>
+
+
+        </div>
+    </header>
+    <div class="main">
+        <aside class="sidebar">
+            <h3>Add fleet</h3>
+            <div class="input">
+                <label Reg No *></label>
+                <input type="text"
+                id="regno"
+                placeholder="AB09AS5324">
+            </div>
+            <div class="input">
+                <label>categorg *</label>
+                <select id="vechicalcetegory">
+                    <option value=""></option>
+                    <option>auto</option>
+                    <option>car</option>
+                    <option>bus</option>
+                    <option>truck</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>Driver Name *</label>
+                <input type="text"
+                id="drivernmae"
+                placeholder="Driver name">
+
+
+            </div>
+            <div class="input-group">
+                <label>Avilable *</label>
+                <select id="vechicalstatus">
+                    <option>Availability</option>
+                    <option>UNAvailability</option>
+                </select>
+            </div>
+
+            <button class="tn" onclick="AddFlet()">Add Fleet</button>
+        </aside>
+        <main class="dashboard">
+            <h3>All vechical</h3>
+            <div id="fleetContainer"
+            class="flet-grid"></div>
+            <p id="no data"
+            class="empty">No vechical added yet</p>
+            
+        </main>
     </div>
+
+    
 </body>
 </html>
