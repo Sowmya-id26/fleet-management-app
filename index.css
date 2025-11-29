@@ -1,0 +1,29 @@
+body{
+    margin: 0px;
+    padding: 10px;
+    background-color: aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.login{
+    width:200px;
+    //background-color: bisque;
+    padding: 0px;
+    border-radius: 0px;
+}
+.input{
+    //background-color: beige;
+    margin: 0;
+
+}
+.password{
+    background-color: beige;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
