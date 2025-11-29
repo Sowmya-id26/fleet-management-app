@@ -3,16 +3,19 @@ body{
     padding: 10px;
     background-color: aqua;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 .login{
-    width:200px;
-    //background-color: bisque;
+    width: 200px;
     padding: 0px;
-    border-radius: 0px;
+    border-radius:0px;
+    justify-content:center;
+    align-items:center;
 }
 .input{
-    //background-color: beige;
-    margin: 0;
+    
+    margin:0;
 
 }
 .password{
