@@ -4,3 +4,17 @@ body{
     margin: auto;
 
 }
+.button{
+    background-color: aqua;
+
+}
+.navbar{
+    margin: auto;
+    padding: 10px;
+    background-color: beige;
+}
+.class{
+    background-color: aquamarine;
+    padding: 50px;
+    margin: auto;
+}
